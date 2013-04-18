@@ -3082,6 +3082,11 @@ table th[class*="span"],
 .main {
   padding-top: 20px;
 }
+.label {
+  color: #9663c4;
+  display: block;
+  margin-bottom: 5px;
+}
 .navbar {
   background-color: #222222;
   color: #ffffff;
@@ -3102,6 +3107,7 @@ table th[class*="span"],
   border-top-left-radius: 5px;
   padding: 5px;
 }
+.navbar li a,
 .navbar li a:active,
 .navbar li a:focus,
 .navbar li a:hover,
@@ -3117,6 +3123,7 @@ table th[class*="span"],
   color: #000000;
   background-color: #ffffff;
 }
+.navbar .selected a,
 .navbar .selected a:active,
 .navbar .selected a:focus,
 .navbar .selected a:hover,
@@ -3136,7 +3143,12 @@ table th[class*="span"],
 footer {
   background-color: #999999;
   padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
+footer a,
 footer a:active,
 footer a:focus,
 footer a:hover,
