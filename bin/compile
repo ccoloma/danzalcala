@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Compila el fichero less
+rm less/*.css
+bin/node_modules/less/bin/lessc less/style.less less/style.css
+(( "$?" != "0" )) && exit 1;
+
+# genera los checksums
+node bin/minify.js
+(( "$?" != "0" )) && exit 1;

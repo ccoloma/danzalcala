@@ -1,0 +1,44 @@
+.navbar {
+  background-color: @grayDarker;
+  color: @white;
+  margin-right: 10px;
+  font-size: 20px;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    border: 1px solid @grayLight;
+    border-bottom: none;
+    .border-top-radius(5px);
+    padding: 5px;
+  
+    .unstyledLink(@white);
+
+  }
+  
+  li:first-child {
+    border: none;
+    padding: 0px;
+  }
+
+  .selected {
+    font-weight: bold;
+    color: @black;
+    background-color: @white;
+
+    .unstyledLink();
+  }
+}
+
+.logo {
+  background: url('../img/logo_tda.png') no-repeat;
+  background-size: contain;
+  float: left;
+  margin: 8px 20px 0 0;
+  text-indent: 100%;
+  overflow: hidden;
+  height: 131px;
+  width: 300px;
+}
