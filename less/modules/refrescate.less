@@ -1,0 +1,63 @@
+@cardBorder: 3px solid @grayLight;
+
+.course(@color) {
+  .course, .selected {
+    background-color: @color;
+    color: @white;
+  }
+}
+
+.course-container {
+
+  border: @cardBorder;
+  .border-radius(5px);
+  line-height: 30px;
+
+  .course {
+    padding: 5px 0;
+    border-bottom: @cardBorder;
+    line-height: 20px;
+  }
+
+  .title {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .description {
+    display: block;
+    font-size: 14px;
+  }
+
+  .card-schedule {
+
+    border-bottom: @cardBorder;
+
+    span {
+      border-right: @cardBorder;
+      padding: 0 5px;
+      float: left;
+    } 
+
+    span:last-child {
+      border: none;
+      float: none;
+    }
+
+  }
+
+  .price {
+    border-right: @cardBorder;
+  }
+
+}
+
+.sevillanas {
+  .course(#eda04f);
+}
+
+.sevillanas-pro {
+  .course(#78aadb);
+}
