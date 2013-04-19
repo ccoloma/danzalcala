@@ -3097,51 +3097,74 @@ body {
   font-size: 11px;
   text-transform: uppercase;
 }
-.course-container {
+.card {
   border: 3px solid #999999;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   line-height: 30px;
 }
-.course-container .course {
-  padding: 5px 0;
-  border-bottom: 3px solid #999999;
-  line-height: 20px;
-}
-.course-container .title {
+.card .title {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
 }
-.course-container .description {
+.card .description {
   display: block;
   font-size: 14px;
 }
-.course-container .card-schedule {
+.card .card-schedule {
   border-bottom: 3px solid #999999;
 }
-.course-container .card-schedule span {
+.card .card-schedule span {
   border-right: 3px solid #999999;
   padding: 0 5px;
   float: left;
 }
-.course-container .card-schedule span:last-child {
+.card .card-schedule span:last-child {
   border: none;
   float: none;
 }
-.course-container .price {
+.card .price {
   border-right: 3px solid #999999;
 }
-.sevillanas .course,
+.card-data {
+  padding: 5px 0;
+  border-bottom: 3px solid #999999;
+  line-height: 20px;
+}
+.card-data-large {
+  height: 60px;
+}
+.sevillanas .card-data,
 .sevillanas .selected {
   background-color: #eda04f;
   color: #ffffff;
 }
-.sevillanas-pro .course,
+.sevillanas-pro .card-data,
 .sevillanas-pro .selected {
   background-color: #78aadb;
+  color: #ffffff;
+}
+.tonificacion .card-data,
+.tonificacion .selected {
+  background-color: #eda04f;
+  color: #ffffff;
+}
+.latin-fitness .card-data,
+.latin-fitness .selected {
+  background-color: #78aadb;
+  color: #ffffff;
+}
+.zumba .card-data,
+.zumba .selected {
+  background-color: #00b28c;
+  color: #ffffff;
+}
+.danza-oriental .card-data,
+.danza-oriental .selected {
+  background-color: #772d35;
   color: #ffffff;
 }
 .schedule th,
@@ -3166,13 +3189,13 @@ body {
   display: block;
   font-weight: bold;
 }
-.hiphop {
+table .hiphop {
   background-color: #84e2a8;
 }
-.zumba {
+table .zumba {
   background-color: #eda04f;
 }
-.salon-intermedio {
+table .salon-intermedio {
   background-color: #f9827f;
 }
 .navbar {

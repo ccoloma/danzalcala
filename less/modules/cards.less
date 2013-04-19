@@ -1,23 +1,18 @@
 @cardBorder: 3px solid @grayLight;
 
-.course(@color) {
-  .course, .selected {
+.card-color(@color) {
+  .card-data, .selected {
     background-color: @color;
     color: @white;
   }
 }
 
-.course-container {
+.card {
 
   border: @cardBorder;
   .border-radius(5px);
   line-height: 30px;
 
-  .course {
-    padding: 5px 0;
-    border-bottom: @cardBorder;
-    line-height: 20px;
-  }
 
   .title {
     display: block;
@@ -54,10 +49,39 @@
 
 }
 
+.card-data {
+  padding: 5px 0;
+  border-bottom: @cardBorder;
+  line-height: 20px;
+}
+
+.card-data-large {
+  height: 60px;
+}
+
+// refrescate
+
 .sevillanas {
-  .course(#eda04f);
+  .card-color(#eda04f);
 }
 
 .sevillanas-pro {
-  .course(#78aadb);
+  .card-color(#78aadb);
+}
+
+// cursos
+.tonificacion {
+  .card-color(#eda04f); 
+}
+
+.latin-fitness {
+  .card-color(#78aadb);
+}
+
+.zumba {
+  .card-color(#00b28c);
+}
+
+.danza-oriental {
+  .card-color(#772d35);
 }
