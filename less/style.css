@@ -3080,12 +3080,48 @@ table th[class*="span"],
   }
 }
 .main {
-  padding-top: 20px;
+  padding: 20px 0 30px 0;
 }
 .label {
   color: #5b027a;
   display: block;
   margin-bottom: 5px;
+}
+.schedule th,
+.schedule td {
+  text-align: center;
+  vertical-align: middle;
+}
+.schedule th {
+  background-color: #333333;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.schedule .title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.schedule .instructor {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.schedule .price {
+  display: block;
+  font-weight: bold;
+}
+.hiphop {
+  background-color: #84e2a8;
+}
+.zumba {
+  background-color: #eda04f;
+}
+.salon-intermedio {
+  background-color: #f9827f;
 }
 .navbar {
   background-color: #222222;
