@@ -3198,6 +3198,12 @@ table .zumba {
 table .salon-intermedio {
   background-color: #f9827f;
 }
+ul.sponsors {
+  margin-left: 20px;
+}
+ul.sponsors li {
+  margin: 10px 0;
+}
 .navbar {
   background: #222222 url('http://2.bp.blogspot.com/-2cfxnkNvkKs/Tj1OZwlEU8I/AAAAAAAAAVI/FPDFxH_n4b4/s320/pop.jpg') repeat-x;
   color: #ffffff;
@@ -3260,7 +3266,9 @@ table .salon-intermedio {
   }
 }
 footer {
-  background-color: #999999;
+  background-color: #555555;
+  color: #ffffff;
+  font-weight: bold;
   padding: 10px 20px;
   position: fixed;
   bottom: 0;
@@ -3272,5 +3280,5 @@ footer a:active,
 footer a:focus,
 footer a:hover,
 footer a:visited {
-  color: #333333;
+  color: #ffffff;
 }
