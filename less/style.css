@@ -3140,89 +3140,53 @@ body {
 .card-data-large {
   height: 60px;
 }
-.sevillanas .card-data {
+.sevillanas .card-data,
+.sevillanas .selected {
   background-color: #eda04f;
   color: #ffffff;
-}
-.sevillanas .card-schedule {
-  background-color: #eda04f;
-}
-.sevillanas .card-schedule :not(.selected) {
-  background-color: #ffffff;
 }
 .sevillanas .selected {
   font-weight: bold;
-  color: #ffffff;
 }
-.sevillanas-pro .card-data {
+.sevillanas-pro .card-data,
+.sevillanas-pro .selected {
   background-color: #78aadb;
   color: #ffffff;
-}
-.sevillanas-pro .card-schedule {
-  background-color: #78aadb;
-}
-.sevillanas-pro .card-schedule :not(.selected) {
-  background-color: #ffffff;
 }
 .sevillanas-pro .selected {
   font-weight: bold;
-  color: #ffffff;
 }
-.tonificacion .card-data {
+.tonificacion .card-data,
+.tonificacion .selected {
   background-color: #eda04f;
   color: #ffffff;
-}
-.tonificacion .card-schedule {
-  background-color: #eda04f;
-}
-.tonificacion .card-schedule :not(.selected) {
-  background-color: #ffffff;
 }
 .tonificacion .selected {
   font-weight: bold;
-  color: #ffffff;
 }
-.latin-fitness .card-data {
+.latin-fitness .card-data,
+.latin-fitness .selected {
   background-color: #78aadb;
   color: #ffffff;
-}
-.latin-fitness .card-schedule {
-  background-color: #78aadb;
-}
-.latin-fitness .card-schedule :not(.selected) {
-  background-color: #ffffff;
 }
 .latin-fitness .selected {
   font-weight: bold;
-  color: #ffffff;
 }
-.zumba .card-data {
+.zumba .card-data,
+.zumba .selected {
   background-color: #00b28c;
   color: #ffffff;
-}
-.zumba .card-schedule {
-  background-color: #00b28c;
-}
-.zumba .card-schedule :not(.selected) {
-  background-color: #ffffff;
 }
 .zumba .selected {
   font-weight: bold;
-  color: #ffffff;
 }
-.danza-oriental .card-data {
+.danza-oriental .card-data,
+.danza-oriental .selected {
   background-color: #772d35;
   color: #ffffff;
-}
-.danza-oriental .card-schedule {
-  background-color: #772d35;
-}
-.danza-oriental .card-schedule :not(.selected) {
-  background-color: #ffffff;
 }
 .danza-oriental .selected {
   font-weight: bold;
-  color: #ffffff;
 }
 @media (max-width: 767px) {
   .card .card-schedule span {
@@ -3346,4 +3310,9 @@ footer a:focus,
 footer a:hover,
 footer a:visited {
   color: #ffffff;
+}
+@media (max-width: 676px) {
+  footer {
+    position: static;
+  }
 }

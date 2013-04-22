@@ -1,20 +1,12 @@
 @cardBorder: 3px solid @grayLight;
 
 .card-color(@color) {
-  .card-data {
+  .card-data, .selected {
     background-color: @color;
     color: @white;
-  }
-  .card-schedule {
-    background-color: @color;
-
-    :not(.selected) {
-      background-color: @white;
-    }
   }
   .selected {
     font-weight: bold;
-    color: @white;
   }
 }
 
