@@ -3130,10 +3130,10 @@ body {
 }
 .card .price {
   border-left: 3px solid #999999;
-  margin-left: none;
+  margin-left: 0px;
 }
 .card-data {
-  padding: 5px 0;
+  padding: 5px 0px;
   border-bottom: 3px solid #999999;
   line-height: 20px;
 }
