@@ -3122,7 +3122,7 @@ table th[class*="span"],
   border-left: 3px solid #999999;
   display: inline-block;
   margin-left: -4px;
-  width: 19%;
+  width: 20%;
 }
 .card .card-schedule span:first-child {
   margin-left: 0px;
@@ -3188,9 +3188,15 @@ table th[class*="span"],
 .danza-oriental .selected {
   font-weight: bold;
 }
+@media (min-width: 768px) and (max-width: 979px) {
+  .card .card-schedule span {
+    width: 20.1%;
+    margin-left: -5px;
+  }
+}
 @media (max-width: 767px) {
   .card .card-schedule span {
-    width: 19.6%;
+    width: 19.8%;
   }
   .card .price {
     border-left: none;
