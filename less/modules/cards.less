@@ -1,8 +1,19 @@
 @cardBorder: 3px solid @grayLight;
 
 .card-color(@color) {
-  .card-data, .selected {
+  .card-data {
     background-color: @color;
+    color: @white;
+  }
+  .card-schedule {
+    background-color: @color;
+
+    :not(.selected) {
+      background-color: @white;
+    }
+  }
+  .selected {
+    font-weight: bold;
     color: @white;
   }
 }
@@ -12,7 +23,7 @@
   border: @cardBorder;
   .border-radius(5px);
   line-height: 30px;
-
+  margin-bottom: 10px;
 
   .title {
     display: block;
@@ -31,20 +42,23 @@
     border-bottom: @cardBorder;
 
     span {
-      border-right: @cardBorder;
-      padding: 0 5px;
-      float: left;
-    } 
+      border-left: @cardBorder;
+      display: inline-block;
+      margin-left: -4px;
+      width: 19%;
+      
+      &:first-child {
+        margin-left: 0px;
+        border-left: none;
+      }
 
-    span:last-child {
-      border: none;
-      float: none;
     }
 
   }
 
   .price {
-    border-right: @cardBorder;
+    border-left: @cardBorder;
+    margin-left: none;
   }
 
 }
@@ -84,4 +98,18 @@
 
 .danza-oriental {
   .card-color(#772d35);
+}
+
+@media (max-width: 767px) {
+  
+  .card {
+    .card-schedule span {
+      width: 19.6%;
+    }
+
+    .price {
+      border-left: none;
+    }
+  }
+
 }

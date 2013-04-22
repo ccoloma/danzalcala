@@ -3103,6 +3103,7 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   line-height: 30px;
+  margin-bottom: 10px;
 }
 .card .title {
   display: block;
@@ -3118,16 +3119,18 @@ body {
   border-bottom: 3px solid #999999;
 }
 .card .card-schedule span {
-  border-right: 3px solid #999999;
-  padding: 0 5px;
-  float: left;
+  border-left: 3px solid #999999;
+  display: inline-block;
+  margin-left: -4px;
+  width: 19%;
 }
-.card .card-schedule span:last-child {
-  border: none;
-  float: none;
+.card .card-schedule span:first-child {
+  margin-left: 0px;
+  border-left: none;
 }
 .card .price {
-  border-right: 3px solid #999999;
+  border-left: 3px solid #999999;
+  margin-left: none;
 }
 .card-data {
   padding: 5px 0;
@@ -3137,35 +3140,97 @@ body {
 .card-data-large {
   height: 60px;
 }
-.sevillanas .card-data,
+.sevillanas .card-data {
+  background-color: #eda04f;
+  color: #ffffff;
+}
+.sevillanas .card-schedule {
+  background-color: #eda04f;
+}
+.sevillanas .card-schedule :not(.selected) {
+  background-color: #ffffff;
+}
 .sevillanas .selected {
-  background-color: #eda04f;
+  font-weight: bold;
   color: #ffffff;
 }
-.sevillanas-pro .card-data,
+.sevillanas-pro .card-data {
+  background-color: #78aadb;
+  color: #ffffff;
+}
+.sevillanas-pro .card-schedule {
+  background-color: #78aadb;
+}
+.sevillanas-pro .card-schedule :not(.selected) {
+  background-color: #ffffff;
+}
 .sevillanas-pro .selected {
-  background-color: #78aadb;
+  font-weight: bold;
   color: #ffffff;
 }
-.tonificacion .card-data,
-.tonificacion .selected {
+.tonificacion .card-data {
   background-color: #eda04f;
   color: #ffffff;
 }
-.latin-fitness .card-data,
-.latin-fitness .selected {
+.tonificacion .card-schedule {
+  background-color: #eda04f;
+}
+.tonificacion .card-schedule :not(.selected) {
+  background-color: #ffffff;
+}
+.tonificacion .selected {
+  font-weight: bold;
+  color: #ffffff;
+}
+.latin-fitness .card-data {
   background-color: #78aadb;
   color: #ffffff;
 }
-.zumba .card-data,
-.zumba .selected {
+.latin-fitness .card-schedule {
+  background-color: #78aadb;
+}
+.latin-fitness .card-schedule :not(.selected) {
+  background-color: #ffffff;
+}
+.latin-fitness .selected {
+  font-weight: bold;
+  color: #ffffff;
+}
+.zumba .card-data {
   background-color: #00b28c;
   color: #ffffff;
 }
-.danza-oriental .card-data,
-.danza-oriental .selected {
+.zumba .card-schedule {
+  background-color: #00b28c;
+}
+.zumba .card-schedule :not(.selected) {
+  background-color: #ffffff;
+}
+.zumba .selected {
+  font-weight: bold;
+  color: #ffffff;
+}
+.danza-oriental .card-data {
   background-color: #772d35;
   color: #ffffff;
+}
+.danza-oriental .card-schedule {
+  background-color: #772d35;
+}
+.danza-oriental .card-schedule :not(.selected) {
+  background-color: #ffffff;
+}
+.danza-oriental .selected {
+  font-weight: bold;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .card .card-schedule span {
+    width: 19.6%;
+  }
+  .card .price {
+    border-left: none;
+  }
 }
 .schedule th,
 .schedule td {
@@ -3259,7 +3324,7 @@ ul.sponsors li {
   height: 131px;
   width: 300px;
 }
-@media (max-width: 767px) {
+@media (max-width: 979px) {
   .navbar li:first-child {
     width: 100%;
     margin-bottom: 10px;
