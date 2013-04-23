@@ -1,0 +1,31 @@
+.cell(@color) {
+  background-color: @color;
+  color: @white;
+  font-weight: bold;
+}
+
+.courses {
+  td, th {
+    text-align: center;
+  }
+  tbody td:not(:first-child) {
+    padding: 0px;
+  }
+
+  div {
+    padding: 8px;
+  }
+
+  // cursos
+  .tonificacion {
+    .cell(#eda04f); 
+  }
+
+  .danza-oriental {
+    .cell(#772d35);
+  }
+
+  .latin-fitness {
+   .cell(#78aadb);
+  }
+}

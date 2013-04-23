@@ -3138,7 +3138,7 @@ table th[class*="span"],
   line-height: 20px;
 }
 .card-data-large {
-  height: 60px;
+  height: 73px;
 }
 .sevillanas .card-data,
 .sevillanas .selected {
@@ -3156,36 +3156,12 @@ table th[class*="span"],
 .sevillanas-pro .selected {
   font-weight: bold;
 }
-.tonificacion .card-data,
-.tonificacion .selected {
-  background-color: #eda04f;
-  color: #ffffff;
-}
-.tonificacion .selected {
-  font-weight: bold;
-}
-.latin-fitness .card-data,
-.latin-fitness .selected {
-  background-color: #78aadb;
-  color: #ffffff;
-}
-.latin-fitness .selected {
-  font-weight: bold;
-}
 .zumba .card-data,
 .zumba .selected {
   background-color: #00b28c;
   color: #ffffff;
 }
 .zumba .selected {
-  font-weight: bold;
-}
-.danza-oriental .card-data,
-.danza-oriental .selected {
-  background-color: #772d35;
-  color: #ffffff;
-}
-.danza-oriental .selected {
   font-weight: bold;
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -3239,50 +3215,44 @@ ul.sponsors {
 ul.sponsors li {
   margin: 10px 0;
 }
-.navbar {
-  background: #222222 url('http://2.bp.blogspot.com/-2cfxnkNvkKs/Tj1OZwlEU8I/AAAAAAAAAVI/FPDFxH_n4b4/s320/pop.jpg') repeat-x;
-  color: #ffffff;
-  margin-right: 10px;
-  font-size: 20px;
+.courses td,
+.courses th {
+  text-align: center;
 }
-.navbar ul {
-  margin-bottom: 0;
-}
-.navbar li {
-  border: 1px solid #999999;
-  border-bottom: none;
-  background-color: #222222;
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  border-top-right-radius: 5px;
-  -webkit-border-top-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  border-top-left-radius: 5px;
-  padding: 5px;
-}
-.navbar li a,
-.navbar li a:active,
-.navbar li a:focus,
-.navbar li a:hover,
-.navbar li a:visited {
-  color: #ffffff;
-}
-.navbar li:first-child {
-  border: none;
-  background-color: transparent;
+.courses tbody td:not(:first-child) {
   padding: 0px;
 }
-.navbar .selected {
-  font-weight: bold;
-  color: #000000;
-  background-color: #ffffff;
+.courses div {
+  padding: 8px;
 }
-.navbar .selected a,
-.navbar .selected a:active,
-.navbar .selected a:focus,
-.navbar .selected a:hover,
-.navbar .selected a:visited {
+.courses .tonificacion {
+  background-color: #eda04f;
+  color: #ffffff;
+  font-weight: bold;
+}
+.courses .danza-oriental {
+  background-color: #772d35;
+  color: #ffffff;
+  font-weight: bold;
+}
+.courses .latin-fitness {
+  background-color: #78aadb;
+  color: #ffffff;
+  font-weight: bold;
+}
+.navbar {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+.navbar .navbar-links {
+  padding-top: 35px;
+}
+.navbar a {
+  cursor: pointer;
   color: #000000;
+  text-decoration: none;
+  margin: 0 5px;
 }
 .logo {
   background: url('../img/logo_tda.png') no-repeat;
@@ -3291,14 +3261,8 @@ ul.sponsors li {
   margin: 8px 20px 0 0;
   text-indent: 100%;
   overflow: hidden;
-  height: 131px;
-  width: 300px;
-}
-@media (max-width: 979px) {
-  .navbar li:first-child {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+  height: 70px;
+  width: 162px;
 }
 footer {
   background-color: #555555;
@@ -3310,12 +3274,9 @@ footer {
   left: 0;
   right: 0;
 }
-footer a,
-footer a:active,
-footer a:focus,
-footer a:hover,
-footer a:visited {
+footer a {
   color: #ffffff;
+  text-decoration: none;
 }
 @media (max-width: 676px) {
   footer {

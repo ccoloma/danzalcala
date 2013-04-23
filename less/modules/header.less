@@ -1,36 +1,19 @@
+@logoHeight: 70px;
+
 .navbar {
-  background: @grayDarker url('http://2.bp.blogspot.com/-2cfxnkNvkKs/Tj1OZwlEU8I/AAAAAAAAAVI/FPDFxH_n4b4/s320/pop.jpg') repeat-x;
-  color: @white;
-  margin-right: 10px;
-  font-size: 20px;
-
-  ul {
-    margin-bottom: 0;
-  }
-
-  li {
-    border: 1px solid @grayLight;
-    border-bottom: none;
-    background-color: @grayDarker;
-    .border-top-radius(5px);
-    padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
   
-    .unstyledLink(@white);
-
-  }
-  
-  li:first-child {
-    border: none;
-    background-color: transparent;
-    padding: 0px;
+  .navbar-links {
+    padding-top: @logoHeight / 2;
   }
 
-  .selected {
-    font-weight: bold;
+  a {
+    cursor: pointer;
     color: @black;
-    background-color: @white;
-
-    .unstyledLink();
+    text-decoration: none;
+    margin: 0 5px;
   }
 }
 
@@ -41,14 +24,6 @@
   margin: 8px 20px 0 0;
   text-indent: 100%;
   overflow: hidden;
-  height: 131px;
-  width: 300px;
-}
-
-
-@media (max-width: 979px) {
-  .navbar li:first-child {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+  height: @logoHeight;
+  width: 162px;
 }
