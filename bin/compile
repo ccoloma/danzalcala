@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Compila el fichero less
-rm less/*.css
+rm -f less/*.css
 bin/node_modules/less/bin/lessc less/style.less less/style.css
 (( "$?" != "0" )) && exit 1;
 

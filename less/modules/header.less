@@ -6,13 +6,12 @@
   font-size: 13px;
   
   .navbar-links {
-    padding-top: @logoHeight / 2;
+    padding-top: @logoHeight / 2 - 6px;
   }
 
   a {
     cursor: pointer;
-    color: @black;
-    text-decoration: none;
+    color: #2B67C2;
     margin: 0 5px;
   }
 }
@@ -20,8 +19,7 @@
 .logo {
   background: url('../img/logo_tda.png') no-repeat;
   background-size: contain;
-  float: left;
-  margin: 8px 20px 0 0;
+  display: block;
   text-indent: 100%;
   overflow: hidden;
   height: @logoHeight;

@@ -1,31 +1,63 @@
-.cell(@color) {
-  background-color: @color;
-  color: @white;
-  font-weight: bold;
-}
-
-.courses {
-  td, th {
+.schedule {
+  
+  th, td {
     text-align: center;
-  }
-  tbody td:not(:first-child) {
-    padding: 0px;
+    vertical-align: middle;
   }
 
-  div {
+  th {
+    background-color: @grayDark;
+    color: @white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  td:not(:first-child) {
+    padding: 0;
+  }
+  .title {
+    display: block;
+    font-weight: bold;
+  }
+  .instructor {
+    display: block;
+    font-size: 85%;
+  }
+  .price {
+    display: block;
+    font-weight: bold; 
+  }
+
+  [class*="curso"] {
     padding: 8px;
   }
 
-  // cursos
-  .tonificacion {
-    .cell(#eda04f); 
+  .lunchtime {
+    height: 8px;
+    border-top: 1px solid #ddd;
+    &> td {
+      padding: 0;
+    }
   }
 
-  .danza-oriental {
-    .cell(#772d35);
+  .curso1 {
+    background-color: #f4921e;
+  }
+  .curso2 {
+    background-color: #e3db9a;
   }
 
-  .latin-fitness {
-   .cell(#78aadb);
+  .curso3 {
+    background-color: #b1c2b3;
   }
+
+  .curso4 {
+    background-color: #AAB4BB;
+  }
+  .curso5 {
+    background-color: #c7b773;
+  }
+  .curso6 {
+    background-color: #c5d2db;
+  }
+
 }
